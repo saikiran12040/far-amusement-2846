@@ -1,0 +1,88 @@
+.bg-image .filter-blur img{
+    width:100%;
+    position: relative;
+}
+#navbar{
+    position:static;
+    top:0;
+    left: 0;
+}
+.h h1{
+    position: absolute;
+    top:40%;
+    left:37%;
+    font-family: monospace;
+    font-weight: 100;
+    color: white;
+    font-size: 50px;
+}
+.h h2{
+    position: absolute;
+    top:50%;
+    left:39%;
+    color: white;
+    font-size: 15px; 
+    letter-spacing: 10px;
+}
+#about{
+   display: flex;
+   justify-content: center;
+   margin:30px;
+}
+#about a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 24px;
+    color:black;
+    font-weight: 300;
+    
+}
+.brand{
+    margin:4% 9%;
+}
+.brand h1{
+    margin-bottom:3%
+}
+.brand p{
+    margin-left: 4%;
+    margin-bottom:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.brand h1{
+    position: relative;
+    display: inline-block;
+}
+.brand h1::after{
+    content: '';
+    position:absolute;
+    width:30%;
+    left:0;
+    bottom:-8px;
+    height:3px;
+    background-color:red;
+    border-radius:40px;
+}
+.feature1{
+    display:grid;
+}
+.feature h1{
+    margin:1% 8%;
+    position: relative;
+    display: inline-block;
+}
+.feature h1::after{
+    content: '';
+    position:absolute;
+    width:30%;
+    left:0;
+    bottom:-8px;
+    height:3px;
+    background-color:red;
+    border-radius:40px;
+}
+
+.feat ,.feat2{
+margin-left:20%;
+
+}
