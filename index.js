@@ -1,6 +1,11 @@
+
 import {navbar} from '../components/navbar.js'
+
+import {navbar} from './components/navbar.js'
+
 let nav=document.getElementById('navbar')
 nav.innerHTML=navbar();
+
 
 
 // import 2nd navbar
@@ -10,6 +15,8 @@ nav.innerHTML=navbar();
 // nav3.innerHTML=nav2();
 
 // console.log(nav2)
+
+
 
 
 
@@ -54,14 +61,20 @@ links.forEach(link=>{
 
 
 
+
 // login functinality
+
 let sb=document.querySelector('.link')
 sb.onclick=()=>{
     window.location.href="signup.html"
 }
 
 
+
 JSON.parse(localStorage.getItem('data'))||[]
+
+JSON.parse(localStorage.getItem('data'))||[]
+
 let log=document.getElementById('continue')
 log.addEventListener('click',function(){
     signin(event)
@@ -69,6 +82,7 @@ log.addEventListener('click',function(){
 
 let signin=(e)=>{
     e.preventDefault()
+
     console.log("No")
     var email=document.getElementById('email').value;
     var pass=document.getElementById('password').value;
@@ -84,5 +98,35 @@ if(email==getEmail && pass==getpass)
 }
 else{
     alert('incorrect')
+}
+}
+
+    // console.log("No")
+    var em=document.getElementById('email').value;
+    var pass=document.getElementById('password').value;
+
+    var getEmail=document.getElementById('email')
+    var getpass=document.getElementById('password')
+ console.log(getEmail)
+ console.log(getpass)
+    if(em=="")
+    {
+        alert("Fill the data")
+    }
+    else{
+        if(em==getEmail)
+        {
+            if(pass==getpass)
+            {
+            alert('Login Succesfill!')
+            window.location.href="index.html";    
+        }
+            else{
+                alert("wrong password")
+            }
+    }
+    else{
+        alert("Invalid Details")
+    }   
 }
 }
