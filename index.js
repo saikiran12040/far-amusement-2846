@@ -2,6 +2,15 @@ import navbar from './components/navbar.js'
 let nav=document.getElementById('navbar')
 nav.innerHTML=navbar();
 
+import { sort, last, footer } from "./components/footer.js";
+const sort_div = document.getElementById("footer");
+sort_div.innerHTML = sort();
+footer();
+
+const last_div = document.getElementById("last_portion");
+last_div.innerHTML = last();
+
+
 let movie1={
     name: "Saddle Shoe Rack Large",
     image: "https://p.rmjo.in/productSquare/hs7hg508-500x500.jpg",
@@ -122,3 +131,35 @@ dataPromise.then(function (res){
  .catch(function(err){
    console.log("err:",err)
 })
+
+
+
+document.getElementById("know").addEventListener("click",()=>{
+    window.location.href="https://www.rentomojo.com/benefits"
+})
+
+
+document.querySelector(".yt").addEventListener("click", () => {
+    window.location.href = "https://www.youtube.com/c/RentomojoOfficial";
+  });
+  
+  document.querySelector(".linke").addEventListener("click", () => {
+    window.location.href = "https://www.linkedin.com/company/rentomojo/";
+  });
+  
+  document.querySelector(".twitt").addEventListener("click", () => {
+    window.location.href = "https://twitter.com/rentomojo";
+  });
+  
+  document.querySelector(".fac").addEventListener("click", () => {
+    window.location.href = "https://www.facebook.com/rentomojo";
+  });
+  
+  document.querySelector(".up").addEventListener("click", () => {
+    window.location.href = "./index.html";
+  });
+
+  document.querySelector(".pvt").addEventListener("click", () => {
+    window.location.href = "./index.html";
+  });
+  
