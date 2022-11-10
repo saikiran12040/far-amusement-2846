@@ -13,5 +13,5 @@
   data.forEach((el)=>{
       let card=productCard(el);
       cont.append(card);
-  });
+  })
 };
