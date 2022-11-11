@@ -83,9 +83,8 @@ let images = JSON.parse(localStorage.getItem("movies")) ;
 
 function display(images){
     document.querySelector("#container").innerHTML=null
-  images.forEach(function(el){
+  images.forEach(function(el, i){
       let div=document.createElement("div")
-  
       let img=document.createElement("img");
       img.setAttribute("class","images")
       img.src=el.image
@@ -139,6 +138,8 @@ document.getElementById("know").addEventListener("click",()=>{
 })
 
 
+
+
 document.querySelector(".yt").addEventListener("click", () => {
     window.location.href = "https://www.youtube.com/c/RentomojoOfficial";
   });
@@ -163,3 +164,39 @@ document.querySelector(".yt").addEventListener("click", () => {
     window.location.href = "./index.html";
   });
   
+  document.querySelector("#pack").addEventListener("click", () => {
+    window.location.href ="https://www.rentomojo.com/bangalore/packages-on-rent";
+  });
+  
+  document.querySelector("#furni").addEventListener("click", () => {
+    window.location.href ="https://www.rentomojo.com/bangalore/furniture-on-rent";
+  });
+
+  document.querySelector("#Appli").addEventListener("click", () => {
+    window.location.href ="https://www.rentomojo.com/bangalore/appliances-on-rent";
+  });
+
+  document.querySelector("#Elec").addEventListener("click", () => {
+    window.location.href ="https://www.rentomojo.com/bangalore/electronics-on-rent";
+  });
+
+  document.querySelector("#Fit").addEventListener("click", () => {
+    window.location.href ="https://www.rentomojo.com/bangalore/fitness-equipment-on-rent";
+  });
+
+  document.querySelector("#WFH").addEventListener("click", () => {
+    window.location.href ="https://www.rentomojo.com/bangalore/wfh-essentials";
+  });
+  
+
+  document.getElementById("greater").addEventListener("click",()=>{
+    let ele = document.getElementById("container");
+    ele.scrollTo(400)
+  })
+
+  document.getElementById("less").addEventListener("click",()=>{
+    let ele = document.getElementById("container");
+    ele.scrollTo(-400)
+  })
+
+

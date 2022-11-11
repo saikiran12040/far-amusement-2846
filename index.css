@@ -39,6 +39,7 @@
   border-radius:13px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-left: 2px;
+ 
 }
 .search-form .search:hover{
   background-color: white;
@@ -173,9 +174,8 @@ color:black
     grid-template-columns: repeat(9, 1fr);
     gap: 30px;
     text-align: center;
-    width: 80%;
-   
-    margin: auto;
+    width: 90%;
+    margin-left: auto;
     margin-bottom: 50px;
     padding-bottom: 20px;
 }
