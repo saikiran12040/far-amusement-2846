@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        font-size: 22px;
+        color: #313131;
+        font-size: 35px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 35px;
+        position: relative;
+        line-height: 1.4;
+        text-align: center;
+    }
+    #contaier{
+        width:90%
+    }
+    #subcontainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:60px; 
+    }
+    #subcontainer>a{
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    #gadgets{
+        border: 1px solid transparent;
+        width: 100%;
+        height:200px ;
+        margin: auto;
+    }
+    #subgadgets{
+        border: 1px solid rgb(206, 192, 192);
+        width: 70%;
+        margin: auto;
+        margin-top: 47%;
+        height: 28%;
+        /* display: flex; */
+        background-color: white;
+        padding: -10px;
+       
+    }
+    #text{
+        border:0px solid white ;
+        margin-top: -10px;
+        /* margin-left: 40px; */
+       
+    }
+    #text>p{
+        font-size: 21px;
+        text-align: center;
+        color: #313131;
+    }
+    .gad1{
+        background-image: url("https://www.rentomojo.com/public/images/category/package-bg/bedroom-v1_new.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad2{
+        background-image: url("https://www.rentomojo.com/public/images/category/package-bg/living-room-v2.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad3{
+        background-image: url("https://www.rentomojo.com/public/images/category/package-bg/appliances.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad4{
+        background-image: url("https://www.rentomojo.com/public/images/category/package-bg/study-room-v1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad5{
+        background-image: url("https://www.rentomojo.com/public/images/category/package-bg/dining-v1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad6{
+        background-image: url("https://www.rentomojo.com/public/images/category/package-bg/smart-packages.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad7{
+        background-image: url("https://www.rentomojo.com/public/images/category/package-bg/fitness-packages.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #subgadgets{
+        display: flex;
+        flex-flow: row;
+        gap: 5px;
+    }
+</style>
+<body> 
+    <div id="navbar">
+       
+    </div>
+    <div id="container">
+      <div>  <h1 id="heading"> Browse by Room type</h1></div>
+      <div id="subcontainer">
+       <a href="">
+        <div id="gadgets" class="gad1">
+            <div id="subgadgets">
+                <div id="pinlogo"><img src="https://www.rentomojo.com/public/images/category/icons/bedroom.svg" alt=""></div>
+                <div id="text">
+                    <p>BedRoom</p>
+                </div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad2">
+            <div id="subgadgets">
+                <div id="pinlogo"><img src="https://www.rentomojo.com/public/images/category/icons/living-room.svg" alt=""></div>
+                <div id="text"><p>LivingRoom</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad3">
+            <div id="subgadgets">
+                <div id="pinlogo"><img src="https://www.rentomojo.com/public/images/category/icons/appliance.svg" alt=""></div>
+                <div id="text"><p>WorkFromHome</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad4">
+            <div id="subgadgets">
+                <div id="pinlogo"><img src="https://www.rentomojo.com/public/images/category/icons/study-room.svg" alt=""></div>
+                <div id="text"><p>Kitchen&Dining</p></div>
+            </div>
+        </div>
+       </a>
+       
+      <a href="">
+        <div id="gadgets" class="gad5">
+            <div id="subgadgets">
+                <div id="pinlogo"><img src="https://www.rentomojo.com/public/images/category/icons/dining.svg" alt=""></div>
+                <div id="text"><p>workfrom home</p></div>
+            </div>
+          
+        </div>
+      </a>
+       <a href="">
+        <div id="gadgets" class="gad6">
+           
+            <div id="subgadgets">
+                <div id="pinlogo"><img src="https://www.rentomojo.com/public/images/category/icons/smart-packages.svg" alt=""></div>
+                <div id="text"><p>Smart home</p></div>
+            </div>
+          
+        </div>
+       </a>
+       <a href="">
+        <!-- hdjdjjd -->
+        <div id="gadgets" class="gad7">
+           
+            <div id="subgadgets">
+                <div id="pinlogo"><img src="https://www.rentomojo.com/public/images/category/icons/fitness-packages.svg" alt=""></div>
+                <div id="text"><p>Fitness </p></div>
+            </div>
+          
+        </div>
+       </a>
+
+      
+      </div>
+
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        font-size: 22px;
+        color: #313131;
+        font-size: 35px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 35px;
+        position: relative;
+        line-height: 1.4;
+        text-align: center;
+    }
+    #contaier{
+        width:90%
+    }
+    #subcontainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:60px; 
+    }
+    #subcontainer>a{
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    #gadgets{
+        border: 1px solid white;
+        width: 100%;
+        height:150px ;
+        margin: auto;
+    }
+    #subgadgets{
+        border: 1px solid rgb(206, 192, 192);
+        width: 70%;
+        margin: auto;
+        margin-top: 47%;
+        height: 28%;
+        /* display: flex; */
+        background-color: white;
+        padding: -10px;
+       
+    }
+    #text{
+        border:1px solid transparent ;
+        margin-top: -10px;
+        /* margin-left: 40px; */
+       
+    }
+    #text>p{
+        font-size: 21px;
+        text-align: center;
+        color: #313131;
+    }
+    .gad1{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/washing-machines.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad1:hover{
+        margin-top: -20px;
+    }
+    .gad2{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/refrigerators-and-freezers.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad3{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/televisions.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad4{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/air-conditioners.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad5{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/air-purifiers.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad6{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/microwaves-and-induction-stoves.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad7{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/air-coolers.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad8{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/dishwashers.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+</style>
+<body> 
+    <div id="navbar">
+       
+    </div>
+    <div id="container" class="slider">
+      <div>  <h1 id="heading"> Browse by Electronics type</h1></div>
+      <div id="subcontainer">
+       <a href="">
+        <div id="gadgets" class="gad1">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text">
+                    <p>washing-machines</p>
+                </div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad2">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>refrigerators</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad3">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Televisions</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad4">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Air-Conditioners</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad5">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Air-purifiers</p></div>
+            </div>
+        </div>
+       </a>
+      <a href="">
+        <div id="gadgets" class="gad6">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Microwaves </p></div>
+            </div>
+        </div>
+      </a>
+       <a href="">
+        <div id="gadgets" class="gad7">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Air coolers</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad8">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Dish washers</p></div>
+            </div>
+        </div>
+       </a>
+
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
