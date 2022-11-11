@@ -2099,40 +2099,40 @@
           }
         ]
       }
-      console.log(data)
+      // console.log(data)
 
       let productarr=[]
       for (let keys in data){
         productarr.push(data[keys])
-        // console.log(data.keys)
+        console.log(keys)
         
       }
       console.log(productarr)
     
-      const packages=[]
-      const WFHEssentials=[]
-      const electronics=[]
-      const fitness=[]
-      const furniture=[]
-      const appliances=[]
+      let packages;
+      let WFHEssentials;
+      let electronics;
+      let fitness;
+      let furniture;
+      let appliances;
       for (let i=0;i<productarr.length;i++){
         if(i==0){
-          WFHEssentials.push(productarr[i])
+          WFHEssentials=productarr[i]
         }
         if(i==1){
-          packages.push(productarr[i])
+          packages=productarr[i]
         }
         if(i==2){
-          electronics.push(productarr[i])
+          electronics=productarr[i]
         }
         if(i==3){
-          fitness.push(productarr[i])
+          fitness=productarr[i]
         }
         if(i==4){
-          furniture.push(productarr[i])
+          furniture=productarr[i]
         }
         if(i==5){
-          appliances.push(productarr[i])
+          appliances=productarr[i]
         }
       }
       // console.log(packages)

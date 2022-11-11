@@ -1,7 +1,7 @@
 
   import {appliances, electronics, packages,WFHEssentials,furniture,fitness} from "../components/data.js"
   console.log(packages);
- let data=packages;
+ let data=electronics;
  let bedroomscount=packages.length;
  let WFHEssentialscount=WFHEssentials.length;
  let electronicscount=electronics.length;
@@ -13,7 +13,7 @@ console.log(bedroomscount,WFHEssentialscount,electronicscount,furniturecount,app
  let data1;
  
 //  console.log(productservice)
-let rentupdated;
+ 
 let productCard=({id,productimage,title,rent})=>{
   let div=document.createElement('div');
   div.setAttribute("class","product");
@@ -46,31 +46,31 @@ let productCard=({id,productimage,title,rent})=>{
     slider.style.background=color;
   })
 
+  
   rentp.innerText=`${rent}/mon`;
   div1.append(rentp)
   div.append(img,h2,div1);
   return div;
 }
-let renderDom=(data1)=>{
-  let cont=document.getElementById('packagecontainer');
-  data1.forEach((el)=>{
-    console.log(el)
-      let card=productCard(el);
-      cont.append(card);
-  });
-};
+// let renderDom=(data1)=>{
+//   let cont=document.getElementById('packagecontainer');
+//   data1.forEach((el)=>{
+//     console.log(el)
+//       let card=productCard(el);
+//       cont.append(card);
+//   });
+// };
 
-for(let i=0; i<packages.length; i++){
-  data1=packages[i].product
-  renderDom(data1);
- }
+// for(let i=0; i<packages.length; i++){
+//   data1=packages[i].product
+//   renderDom(data1);
+//  }
  let renderDom1=(data)=>{
   let cont=document.getElementById('packagecontainer');
   data.forEach((el)=>{
     console.log(el)
       let card=productCard(el);
       cont.append(card);
-
   });
 };
 renderDom1(data);
@@ -84,7 +84,3 @@ document.getElementById("itemcount3").innerText=appliancescount;
 document.getElementById("itemcount4").innerText=WFHEssentialscount;
 document.getElementById("itemcount5").innerText=furniturecount;
 document.getElementById("itemcount6").innerText=fitnesscount;
-
-  })
-};
-
