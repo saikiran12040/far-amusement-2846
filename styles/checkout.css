@@ -107,7 +107,6 @@
     width: auto;
     gap:20px;
     border: 1px solid blue;
-
 }
 #monthly{
     border: 1px solid rgb(163, 163, 173);
@@ -123,6 +122,13 @@
     display: flex;
     gap: 20px;
 }
-#coupn>p+p{
-    margin-top: -5px;
+#coupn>div{
+   border: 1px solid red;
+}
+#coupn2>p{
+    font-weight: 500;
+    font-size: 14px;
+}
+#coupn2{
+    margin-top: -6px;
 }
