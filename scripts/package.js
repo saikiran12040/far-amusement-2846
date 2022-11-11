@@ -70,6 +70,7 @@ for(let i=0; i<packages.length; i++){
     console.log(el)
       let card=productCard(el);
       cont.append(card);
+
   });
 };
 renderDom1(data);
@@ -83,3 +84,7 @@ document.getElementById("itemcount3").innerText=appliancescount;
 document.getElementById("itemcount4").innerText=WFHEssentialscount;
 document.getElementById("itemcount5").innerText=furniturecount;
 document.getElementById("itemcount6").innerText=fitnesscount;
+
+  })
+};
+

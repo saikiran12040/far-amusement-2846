@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        font-size: 22px;
+        color: #313131;
+        font-size: 35px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 35px;
+        position: relative;
+        line-height: 1.4;
+        text-align: center;
+    }
+    #contaier{
+        width:90%
+    }
+    #subcontainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:60px; 
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    #gadgets{
+        border: 0px solid red;
+        width: 100%;
+        height:150px ;
+        margin: auto;
+    }
+    #subgadgets{
+        border: 1px solid rgb(206, 192, 192);
+        width: 70%;
+        margin: auto;
+        margin-top: 47%;
+        height: 28%;
+        /* display: flex; */
+        background-color: white;
+        padding: -10px;
+       
+    }
+    #text{
+        border:0px solid blue ;
+        margin-top: -10px;
+        /* margin-left: 40px; */
+       
+    }
+    #text>p{
+        font-size: 21px;
+        text-align: center;
+        color: #313131;
+    }
+    .gad1{
+        background-image: url("https://www.rentomojo.com/public/images/category/fitness/treadmills.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad1:hover{
+        margin-top: -10px;
+    }
+       
+    .gad2{
+        background-image: url("https://www.rentomojo.com/public/images/category/fitness/cross-trainers.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad3{
+        background-image: url("https://www.rentomojo.com/public/images/category/fitness/exercise-bikes.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad4{
+        background-image: url("https://www.rentomojo.com/public/images/category/fitness/massagers.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+</style>
+<body> 
+    <div id="navbar">
+       
+    </div>
+    <div id="container">
+      <div>  <h1 id="heading">Browse by Fitness type</h1></div>
+      <div id="subcontainer">
+        <div id="gadgets" class="gad1">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text">
+                    <p>Treadmills</p>
+                </div>
+            </div>
+        </div>
+        <div id="gadgets" class="gad2">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Cross Trainers</p></div>
+            </div>
+        </div>
+        <div id="gadgets" class="gad3">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Exercise Bikes</p></div>
+            </div>
+        </div>
+        <div id="gadgets" class="gad4">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Massagers</p></div>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>

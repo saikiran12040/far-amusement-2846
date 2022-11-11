@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        font-size: 22px;
+        color: #313131;
+        font-size: 35px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 35px;
+        position: relative;
+        line-height: 1.4;
+        text-align: center;
+    }
+    #contaier{
+        width:90%
+    }
+    #subcontainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:60px; 
+    }
+    #subcontainer>a{
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    #gadgets{
+        border: 1px solid transparent;
+        width: 100%;
+        height:150px ;
+        margin: auto;
+    }
+    #subgadgets{
+        border: 1px solid rgb(206, 192, 192);
+        width: 70%;
+        margin: auto;
+        margin-top: 47%;
+        height: 28%;
+        /* display: flex; */
+        background-color: white;
+        padding: -10px;
+       
+    }
+    #text{
+        border:0px solid white ;
+        margin-top: -10px;
+        /* margin-left: 40px; */
+       
+    }
+    #text>p{
+        font-size: 21px;
+        text-align: center;
+        color: #313131;
+    }
+    .gad1{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/smartphones_new.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad2{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/smart-devices-v1_new.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad3{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/laptops_new_2.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad4{
+        background-image: url("https://www.rentomojo.com/public/images/category/appliances-bg/tablets_new.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gad5{
+        background-image: url("https://www.rentomojo.com/public/images/category/electronics-category-filter/gaming-consoles/gamingConsole.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
+<body> 
+    <div id="navbar">
+       
+    </div>
+    <div id="container">
+      <div>  <h1 id="heading"> Browse by Electronics type</h1></div>
+      <div id="subcontainer">
+       <a href="">
+        <div id="gadgets" class="gad1">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text">
+                    <p>SmartPhones</p>
+                </div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad2">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>SmartDevices</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad3">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>LapTops</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad4">
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>Tablets</p></div>
+            </div>
+        </div>
+       </a>
+       <a href="">
+        <div id="gadgets" class="gad5">
+           
+            <div id="subgadgets">
+                <!-- <div id="pinlogo"><img src="" alt=""></div> -->
+                <div id="text"><p>GaamingTablets</p></div>
+            </div>
+          
+        </div>
+
+       </a>
+      </div>
+
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
