@@ -1,6 +1,5 @@
 
 const navbar=()=>{
-let navbar=()=>{
     return`
     <div id="box">
             <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_EBNx0delHQ4Bg4-VDwno4msVSYZ2QHW6A&usqp=CAU"></a>
@@ -40,5 +39,5 @@ const nav2=()=>{
 export {navbar}
 export{nav2}
 
-export {navbar}
+
 

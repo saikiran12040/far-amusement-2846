@@ -1,5 +1,16 @@
+import {navbar} from '../components/navbar.js'
+let nav=document.getElementById('navbar')
+nav.innerHTML=navbar();
 
-  import {appliances, electronics, packages,WFHEssentials,furniture,fitness} from "../components/data.js"
+
+// import 2nd navbar
+
+import {nav2} from '../components/navbar.js'
+let nav3=document.getElementById('nav2')
+nav3.innerHTML=nav2();
+
+
+import {appliances, electronics, packages,WFHEssentials,furniture,fitness} from "../components/data.js"
   console.log(packages);
  let data=packages;
  let bedroomscount=packages.length;
@@ -19,6 +30,7 @@ let productCard=(el)=>{
   div.setAttribute("class","product");
   div.onclick=()=>{
     console.log(el)
+    window.location.href="productview.html"
     localStorage.setItem("products",JSON.stringify(el))
   }
   let img=document.createElement('img');

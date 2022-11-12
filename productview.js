@@ -21,9 +21,9 @@ function displayPro(productarr)
     productarr.forEach(function(el){
     let div=document.createElement('div')
     div.setAttribute('id','box1')
-    div.addEventListener("click", () => {
-        localStorage.setItem("products", JSON.stringify(el))
-    })
+    // div.addEventListener("click", () => {
+    //     localStorage.setItem("products", JSON.stringify(el))
+    // })
     let img=document.createElement('img')
     img.setAttribute('src',el.productimage)
     img.addEventListener('click',()=>{
