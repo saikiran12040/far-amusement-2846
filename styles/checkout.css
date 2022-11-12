@@ -1,0 +1,134 @@
+#container{
+    border: 1px solid red;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 50px;
+    width: 90%;
+    padding: 30px;
+}
+
+
+#order_summary{
+    border: 1px solid red;
+    height: 400px;
+    width: 65%;
+    padding: 30px;
+}
+#product_details{
+    border: 1px solid red;
+    height: 400px;
+    width: 35%;
+}
+#img{
+    border: 1px solid red;
+    height: 40px;
+    width:auto ;
+    display: flex;
+    gap: 10px;
+}
+#h4{
+    margin-top: -13px;
+    border: 1px solid red;
+}
+#payable{
+    border: 1px solid rgb(163, 163, 173);
+    width: 350px;
+    height:100px ;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    gap: 10px;
+
+}
+#online{
+    border: 0px solid red;
+    width:100px;
+    height:auto;
+    margin-top: -10px;
+    font-size:14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5e5959;
+    display: -ms-flexbox;
+    background-color: white;
+    margin-left: 30px;
+
+}
+#p_one{
+    border: 1px solid red;
+   display: flex;
+    width: 305px;
+    height: 30px;
+    gap: 80px;
+    margin-top: 10px;
+
+}
+#pi_one{
+    border: 1px solid red;
+    height: 98%;
+    width: 70%;
+    
+}
+#ps_one{
+    border: 1px solid red;
+    height: 98%;
+    width: 25%;
+}
+#p_two{
+    border: 1px solid red;
+   display: flex;
+    width: 320px;
+    height: 30px;
+    gap: 40px;
+    margin-top: 10px;
+
+}
+#pi_two{
+    border: 1px solid red;
+    height: 98%;
+    width: 70%;
+    
+}
+#ps_two{
+    border: 1px solid red;
+    height: 98%;
+    width: 25%;
+}
+#p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #5e5959;
+}
+#payment{
+    display: flex;
+    height: auto;
+    width: auto;
+    gap:20px;
+    border: 1px solid blue;
+}
+#monthly{
+    border: 1px solid rgb(163, 163, 173);
+    width: 350px;
+    height:170px ;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+#coupn{
+    display: flex;
+    gap: 20px;
+}
+#coupn>div{
+   border: 1px solid red;
+}
+#coupn2>p{
+    font-weight: 500;
+    font-size: 14px;
+}
+#coupn2{
+    margin-top: -6px;
+}
