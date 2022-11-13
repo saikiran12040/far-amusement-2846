@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+     #container{
+        margin: auto;
+     }
+    #container>h1{
+        border: 1px solid white;
+        text-align: center;
+        color: rgb(241, 56, 0);
+        
+    }
+    #sub{
+        border: 1px solid gray;
+        width:60%;
+        height: 450px;
+        border-radius: 14px;
+        margin: auto;
+        padding: 40px;
+        margin-top: 40px;
+    }
+    #bank{
+        height:80%;
+    }
+    #form{
+        display:grid;
+    }
+    #form input{
+        padding:8px
+    }
+    #form button{
+        padding:12px;
+        border:none;
+    }
+    #form button:hover{
+        background-color: green;
+        color:white;
+    }
+    #se{
+        padding: 8px;
+    }
+    #total{
+        margin-bottom: 20px;
+    }
+    
+</style>
+<body>
+    <div id="navbar"></div>
+    <div id="container">
+        <h1>Choose payment method</h1>
+        <div id="sub">
+            <div id="total">
+                <h3>Total payable :<span id="tot">00</span></h3>
+            </div>
+            <div id="bank">
+                <form action="" id="form">
+                    <label for="">Select Bank</label>
+                    <select name="" id="se">
+                        <option value="SBI">State Bank of India</option>
+                        <option value="canara"> Canara bank</option>
+                        <option value="Karur Vyshya">Karur Vysya bank</option>
+                    </select><br>
+                    <label for="">Branch Name</label>
+                    <input type="text" id="branch"><br>
+                    <label for="">IFSC</label>
+                    <input type="text" id="ifsc"><br>
+                    <label for="">Card Number</label>
+                    <input type="text" id="cn" minlength="16" maxlength="16"><br>
+                    <label for="">CVV</label>
+                    <input type="password"id="cvv" minlength="3" maxlength="3"><br>
+                    <button id="confirm">Confirm</button>   
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<script type="module" src="./scripts/card.js"></script>

@@ -1,5 +1,5 @@
 #container{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 500px;
     display: flex;
     justify-content: space-between;
@@ -7,22 +7,28 @@
     gap: 50px;
     width: 90%;
     padding: 30px;
+    background-color: #f7f2f2;
+    margin-top: 50px;
 }
 
 
 #order_summary{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 400px;
     width: 65%;
     padding: 30px;
+    background-color: white;
+    border-radius: 10px;
 }
 #product_details{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 400px;
     width: 35%;
+    background-color: white;
 }
+
 #img{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 40px;
     width:auto ;
     display: flex;
@@ -30,7 +36,7 @@
 }
 #h4{
     margin-top: -13px;
-    border: 1px solid red;
+    border: 1px solid white;
 }
 #payable{
     border: 1px solid rgb(163, 163, 173);
@@ -43,7 +49,7 @@
 
 }
 #online{
-    border: 0px solid red;
+    border: 0px solid white;
     width:100px;
     height:auto;
     margin-top: -10px;
@@ -57,7 +63,7 @@
 
 }
 #p_one{
-    border: 1px solid red;
+    border: 1px solid white;
    display: flex;
     width: 305px;
     height: 30px;
@@ -66,18 +72,18 @@
 
 }
 #pi_one{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 98%;
     width: 70%;
     
 }
 #ps_one{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 98%;
     width: 25%;
 }
 #p_two{
-    border: 1px solid red;
+    border: 1px solid white;
    display: flex;
     width: 320px;
     height: 30px;
@@ -86,13 +92,13 @@
 
 }
 #pi_two{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 98%;
     width: 70%;
     
 }
 #ps_two{
-    border: 1px solid red;
+    border: 1px solid white;
     height: 98%;
     width: 25%;
 }
@@ -106,7 +112,7 @@
     height: auto;
     width: auto;
     gap:20px;
-    border: 1px solid blue;
+    border: 1px solid white;
 }
 #monthly{
     border: 1px solid rgb(163, 163, 173);
@@ -119,11 +125,13 @@
     padding: 10px;
 }
 #coupn{
+    border: 1px solid white;
     display: flex;
     gap: 20px;
+    background-color: white;
 }
 #coupn>div{
-   border: 1px solid red;
+   border: 1px solid white;
 }
 #coupn2>p{
     font-weight: 500;
@@ -132,3 +140,113 @@
 #coupn2{
     margin-top: -6px;
 }
+#proceed{
+    display: flex;
+   border-radius: 10px;
+    color: white;
+    background-color: red;
+    width: 300px;
+    padding: 5px;
+    margin-top: 20px;
+}
+#proceed>div{
+    width: 150px;
+}
+
+#pro{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+#nam{
+    margin-top:-10px;
+}
+#show_cartproducts{
+    border: 1px solid white;
+    height: auto;
+    width: 300px;
+    margin-top:20px ;
+    padding: 10px;
+}
+#data_div{
+    border: 1px solid white;
+    padding: 3px;
+    background-color: rgba(238, 238, 232, 0.685);
+    margin-bottom: 15px;
+}
+
+#img_product{
+    /* border: 1px solid red; */
+    width: 80px;
+    height: 100px;
+}
+#cart_details{
+    /* border: 1px solid red; */
+    height: 105px;
+    margin-bottom:10px;
+    width: 95%;
+    display: flex;
+    gap:3px;
+}
+#img_product>img{
+    width: 80px;
+    height: 90%;
+}
+#cart_rate{
+    /* border: 1px solid green; */
+    width: 60%;
+    display: grid;
+    height: auto;
+    margin-top: 15px;
+}
+#amt{
+    display: flex;
+    margin-top: -30px;
+    padding: 5px;
+}
+#add{
+    /* border: 1px solid blue; */
+    background-color: rgba(238, 238, 232, 0.685);
+    width: 96%;
+    height: 30px;
+    display: flex;
+    margin-top: 20px;
+
+}
+#plus{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 48%;
+    margin:auto;
+    height: 30px;
+    background-color:whitesmoke;
+}
+#select{
+    border: 1px solid white;
+    width: 48%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: auto;
+    height: 30px;
+}
+#Bottom_div{
+    border: 1px solid white;
+    width: 96%;
+    height: 30px;
+    background-color:rgba(165, 163, 163, 0.623);
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#Bottom_div h5{
+    margin-top:6px;
+    margin-left: 80px;
+}
+#pro_name{
+    margin-top: 10px;
+}
+/* .Bottom_div{
+    border: 1px solid rgb(221, 35, 35);
+    width: 96%;
+    height: 50px;
+} */
