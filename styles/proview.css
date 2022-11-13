@@ -18,6 +18,60 @@
 .product:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+#Covid{
+    display: flex;
+    height:auto;
+    width:90%;
+    margin-left: 20px;
+    padding:10px;
+    border:1px solid gray;
+    margin-top:30px;
+    margin-bottom:25px;
+}
+#imgcovid{
+    height:50px;
+    width:50px;
+}
+.pd{
+    margin:auto;
+    font-weight: 400;
+    background-color:aliceblue;
+}
+.details{
+    display: flex;
+}
+body{
+  width:100%  
+}
+.produ{
+    width:30%;
+    height:10%
+}
+.des{
+    width:50%;
+    height:80px;
+    margin-left:50px;
+    color:gray;
+    margin-top:70px
+}
+.pd3{
+  color: #7c7575;
+  margin-right:70%;
+  font-weight: 100;
+  font-size: 15px;
+ 
+}
+.mont{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.mont p{
+    font-weight: 600;
+    color:gray;
+     
+}
+
 /* .product>h2{
     font-weight:400;
     color:#181717;
