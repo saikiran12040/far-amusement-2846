@@ -110,7 +110,7 @@ h2{
     margin:130px 0 0 -290px;
 }
 .slider{
-    -webkit-appearance:none;
+    /* -webkit-appearance:none; */
     width:90%;
     height:5px;
     background:linear-gradient(90deg,rgb(214,214,214)60%,rgb(214,214,214)60%);

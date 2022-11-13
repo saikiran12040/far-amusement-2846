@@ -35,6 +35,7 @@ const nav2=()=>{
     </div>
     `
 }
+
 export {navbar}
 
 
