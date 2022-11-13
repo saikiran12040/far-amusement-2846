@@ -19,8 +19,8 @@ let navbar = () => {
             </form> 
          
            
-            <button id="card"><a href="cart.html"><i class="fa-solid fa-cart-shopping">Cart</i></a></button>
-            <button id="login-sign"><a href="login">LOGIN/SIGNUP</a></button>
+            <button id="card"><a href="./checkout.html"><i class="fa-solid fa-cart-shopping">Cart</i></a></button>
+            <button id="login-sign"><a href="./login.html">LOGIN/SIGNUP</a></button>
         </div>
     `;
 };
