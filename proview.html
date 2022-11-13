@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/proview.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="nav2"></div>
+    <div id="itemcontainer">
+        <div id="itemview"></div>
+        <div id="itemsidebar">
+            <h3 id="itemtitle"></h3>
+            <div id="monthquestion">
+                <h4>How long do you want to rent this for?(Months)</h4>
+                <img src="https://www.rentomojo.com/public/images/icons/info-line-icon.svg">
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="10" value="1" id="myRange1" class="slider1">
+                <p><span id="value1"></span></p>
+            </div>
+            <div class="itemamount">
+                <div class="itemrent">
+                    <h2 id="ir">₹</h2>
+                    <p>Monthly Rent</p>
+                    <img src="https://www.rentomojo.com/public/images/icons/info-line-icon.svg">
+                </div>
+                <div class=itemrent id="itemdeposit">
+                    <h2 id="ir1">₹</h2>
+                    <p>Refundable Deposit</p>
+                    <img src="https://www.rentomojo.com/public/images/icons/info-line-icon.svg">
+                </div>
+
+            </div>
+            <div id="offer">
+                <div class="suboffer">
+                    <img src="https://www.rentomojo.com/public/images/icons/black-tick.svg">
+                    <p>7 Days free trail</p>
+                </div>
+                <div class="suboffer">
+                    <img src="https://www.rentomojo.com/public/images/icons/black-tick.svg">
+                    <p>Free Location</p>
+                </div>
+                <div class="suboffer">
+                    <img src="https://www.rentomojo.com/public/images/icons/black-tick.svg">
+                    <p>Free Upgrades</p>
+                </div>
+            </div>
+            <div>
+                <div id="bookdiv">
+                    <img src="https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg">
+                    <p id="date"></p>
+                    <img src="https://www.rentomojo.com/public/images/icons/info-line-icon.svg">
+                </div>
+            </div>
+            <button id="bookplan">Book your plan</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/proview.js" type="module"></script>
