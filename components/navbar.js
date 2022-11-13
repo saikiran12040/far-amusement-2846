@@ -35,12 +35,6 @@ const nav2=()=>{
     </div>
     `
 }
-
 export {navbar}
 
-
-<<<<<<< HEAD
-export {nav2}
-=======
->>>>>>> 1b63beafa573f2c074ec667a2ab60510dd583f7d
 
