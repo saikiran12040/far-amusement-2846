@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <style>
     #heading{
@@ -18,8 +19,9 @@
         line-height: 1.4;
         text-align: center;
     }
-    #contaier{
-        width:90%
+    #container{
+        width:90%;
+        margin:auto
     }
     #subcontainer{
         display: grid;
@@ -31,13 +33,13 @@
         height: 100%;
     }
     #gadgets{
-        border: 0px solid red;
+        border: 1px solid white;
         width: 100%;
         height:150px ;
         margin: auto;
     }
     #subgadgets{
-        border: 1px solid rgb(206, 192, 192);
+        border: 0px solid rgb(206, 192, 192);
         width: 70%;
         margin: auto;
         margin-top: 47%;
@@ -47,9 +49,10 @@
         padding: -10px;
        
     }
+    /* ghgahsh */
     #text{
-        border:0px solid blue ;
-        margin-top: -10px;
+        border:1px solid white;
+        margin-top: 5px;
         /* margin-left: 40px; */
        
     }
@@ -82,7 +85,9 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    
+    #subcontainer>a{
+        text-decoration: none;
+    }
 </style>
 <body> 
     <div id="navbar">
@@ -91,6 +96,7 @@
     <div id="container">
       <div>  <h1 id="heading">Browse by Fitness type</h1></div>
       <div id="subcontainer">
+       <a href="fitness.html">
         <div id="gadgets" class="gad1">
             <div id="subgadgets">
                 <!-- <div id="pinlogo"><img src="" alt=""></div> -->
@@ -99,24 +105,31 @@
                 </div>
             </div>
         </div>
+       </a>
+       <a href="fitness.html">
         <div id="gadgets" class="gad2">
             <div id="subgadgets">
                 <!-- <div id="pinlogo"><img src="" alt=""></div> -->
                 <div id="text"><p>Cross Trainers</p></div>
             </div>
         </div>
+       </a>
+       <a href="fitness.html">
         <div id="gadgets" class="gad3">
             <div id="subgadgets">
                 <!-- <div id="pinlogo"><img src="" alt=""></div> -->
                 <div id="text"><p>Exercise Bikes</p></div>
             </div>
         </div>
+       </a>
+       <a href="fitness.html">
         <div id="gadgets" class="gad4">
             <div id="subgadgets">
                 <!-- <div id="pinlogo"><img src="" alt=""></div> -->
                 <div id="text"><p>Massagers</p></div>
             </div>
         </div>
+       </a>
 
       </div>
 
@@ -125,3 +138,4 @@
     
 </body>
 </html>
+<script type="module" src="./scripts/basefitness.js"></script>
