@@ -169,9 +169,7 @@ function stich(data){
         plus.id="plus"
         plus.innerText="delete"
         plus.addEventListener("click",function(){
-           window.onload=function(){
-            deleteit(ind)
-           }
+           window.onload= deleteit(ind)
         })
     
     
