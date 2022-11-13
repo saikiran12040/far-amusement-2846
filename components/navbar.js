@@ -2,17 +2,28 @@
 const navbar=()=>{
     return`
     <div id="box">
-            <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_EBNx0delHQ4Bg4-VDwno4msVSYZ2QHW6A&usqp=CAU"></a>
-            <select id="city">
-                <option>Mumbai</option>
-            </select>
-            <form action=""class="search-form">
-                <input type="search" name=""placeholder="Search for products" class="search"/>
-            </form> 
-            <button id="card"><i class="fa-solid fa-cart-shopping">Cart</i></button>
-            <button id="login-sign">LOGIN / SIGNUP</button>
+    <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_EBNx0delHQ4Bg4-VDwno4msVSYZ2QHW6A&usqp=CAU"></a>
+    <div id="aCities">
+    <span id="city">Delhi</span>
+    <span>&#957</span>
+</div>
+<div id="mainBox">
+    <div id="cmainBox">
+        <div id="in">
+            <input type="text" id="search" oninput="debounce(search,1000)">
         </div>
-    `
+        <div id="l_container"></div>
+    </div>
+</div>
+ <form action="" class="search-form">
+        <input type="search" name=""placeholder="Search for products" class="search"/>
+    </form> 
+ 
+   
+    <button id="card"><a href="./checkout.html"><i class="fa-solid fa-cart-shopping">Cart</i></a></button>
+    <button id="login-sign"><a href="./login.html">LOGIN/SIGNUP</a></button>
+</div>
+`
 }
 
 const nav2=()=>{
@@ -39,8 +50,7 @@ const nav2=()=>{
 export {navbar}
 
 
-<<<<<<< HEAD
+
 export {nav2}
-=======
->>>>>>> 1b63beafa573f2c074ec667a2ab60510dd583f7d
+
 
