@@ -23,6 +23,7 @@ console.log(bedroomscount,WFHEssentialscount,electronicscount,furniturecount,app
 
  let data1;
  
+
 //  console.log(productservice)
 // let arr=JSON.parse(localStorage.getItem("products")) || [];
 let productCard=(el)=>{
@@ -30,7 +31,7 @@ let productCard=(el)=>{
   div.setAttribute("class","product");
   div.onclick=()=>{
     console.log(el)
-    window.location.href="productview.html"
+    window.location.href="proview.html";
     localStorage.setItem("products",JSON.stringify(el))
   }
   let img=document.createElement('img');
@@ -107,3 +108,17 @@ document.getElementById("itemcount6").innerText=fitnesscount;
 //   window.location.href="productview.html";
 //   console.log(index)
 // };
+let btnvalue=document.getElementById("whatpage")
+if (data.length==4){
+  btnvalue.innerText="Packages"
+} else if (data.length==22){
+  btnvalue.innerText="Electronics"
+} else if (data.length==15){
+  btnvalue.innerText="Appliances"
+} else if (data.length==20){
+  btnvalue.innerText="Furniture"
+} else if (data.length==5){
+  btnvalue.innerText="WFHEssentials"
+} else {
+  btnvalue.innerText="Fitness"
+}

@@ -1,4 +1,15 @@
 
+  import {navbar} from '../components/navbar.js'
+  let nav=document.getElementById('navbar')
+  nav.innerHTML=navbar();
+  
+  
+  // import 2nd navbar
+  
+  import {nav2} from '../components/navbar.js'
+  let nav3=document.getElementById('nav2')
+  nav3.innerHTML=nav2();
+  
   import {appliances, electronics, packages,WFHEssentials,furniture,fitness} from "../components/data.js"
   console.log(packages);
  let data=fitness;
@@ -83,3 +94,18 @@ document.getElementById("itemcount3").innerText=appliancescount;
 document.getElementById("itemcount4").innerText=WFHEssentialscount;
 document.getElementById("itemcount5").innerText=furniturecount;
 document.getElementById("itemcount6").innerText=fitnesscount;
+
+let btnvalue=document.getElementById("whatpage")
+if (data.length==4){
+  btnvalue.innerText="Packages"
+} else if (data.length==22){
+  btnvalue.innerText="Electronics"
+} else if (data.length==15){
+  btnvalue.innerText="Appliances"
+} else if (data.length==20){
+  btnvalue.innerText="Furniture"
+} else if (data.length==5){
+  btnvalue.innerText="WFHEssentials"
+} else {
+  btnvalue.innerText="Fitness"
+}
