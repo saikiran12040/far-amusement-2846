@@ -273,5 +273,50 @@
     box-shadow:6px 6px 29px -4px rgba(0,0,0,0.10);
 }
 
+/* nav2 */
+#main{
+    background-color: rgb(243,243,243);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 14px;
+    padding:20px
+}
+#nav2{
+    position:sticky;
+    top:70px;
+    left:0;
+}
+#nav2 #part1{
+    display: flex;
+    margin-right:40%;
+}
+#nav2 #part1 a{
+    margin-left:80px;
+    text-decoration: none;
+    color:black
+}
+#nav2 #part1 p{
+    margin-left:10px
+}
+#nav2 #part1 a:hover{
+    color:rgb(109, 201, 170)
+}
+#nav2 #part2 ul{
+    display:flex;
+}
+#nav2 #part2 ul li{
+    margin-left:45px;
+    list-style: none;
+}
+#nav2 #part2 ul li a{
+    text-decoration: none;
+    color:black;
+}
+#nav2 #part2 ul li a:hover{
+    color:rgb(109, 201, 170)
+}
+
 
 

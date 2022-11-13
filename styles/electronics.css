@@ -1,3 +1,12 @@
+#whatpage{
+    height:43px;
+    width:184px;
+    border:none;
+    border-radius: 3px;
+    margin-left: 400px;
+    margin-top: 20px;
+    text-align: center;
+}
 #packagecontainer{
     height:auto;
     width:73%;
@@ -8,7 +17,7 @@
     justify-content: center;
     gap:30px;
     margin-left: 400px;
-    margin-top: 180px;
+    margin-top: 20px;
 }
 .product{
     text-align: center;
@@ -31,7 +40,7 @@
     margin-top:10px;
 }
 h2{
-    font-weight: 200;
+    font-weight: 800;
     color:#313131
 }
 .product>h2{
@@ -44,7 +53,7 @@ h2{
     height:800px;
     width:360px;
     /* border:1px solid blue; */
-    margin-top: -5119px;
+    margin-top: -4894px;
 }
 #bar1{
     display:flex;
@@ -88,6 +97,7 @@ h2{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     margin-left: 30px;
+    margin-top: 10px;
 }
 #slideheading h5{
     margin-right:-140px;
@@ -134,16 +144,16 @@ h2{
     color:#313131;
     font-size:1rem;
     position:absolute;
-    top:51%;
-    left:19%;
+    margin-top:10px;
+    margin-left:249px;
 }
 .slider::before{
     content:'1';
     color:#313131;
     font-size:1rem;
     position:absolute;
-    top:51%;
-    left:3.5%;
+    margin-top:10px;
+    margin-left:9px;
 }
 .slidecontainer p{
     text-align:center;

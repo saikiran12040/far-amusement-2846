@@ -1,5 +1,16 @@
+import {navbar} from '../components/navbar.js'
+let nav=document.getElementById('navbar')
+nav.innerHTML=navbar();
 
-  import {appliances, electronics, packages,WFHEssentials,furniture,fitness} from "../components/data.js"
+
+// import 2nd navbar
+
+import {nav2} from '../components/navbar.js'
+let nav3=document.getElementById('nav2')
+nav3.innerHTML=nav2();
+
+
+import {appliances, electronics, packages,WFHEssentials,furniture,fitness} from "../components/data.js"
   console.log(packages);
  let data=packages;
  let bedroomscount=packages.length;
@@ -12,16 +23,22 @@ console.log(bedroomscount,WFHEssentialscount,electronicscount,furniturecount,app
 
  let data1;
  
+
 //  console.log(productservice)
-let rentupdated;
-let productCard=({id,productimage,title,rent})=>{
+// let arr=JSON.parse(localStorage.getItem("products")) || [];
+let productCard=(el)=>{
   let div=document.createElement('div');
   div.setAttribute("class","product");
+  div.onclick=()=>{
+    console.log(el)
+    window.location.href="proview.html";
+    localStorage.setItem("products",JSON.stringify(el))
+  }
   let img=document.createElement('img');
   img.setAttribute("class","productimage");
-  img.src=productimage;
+  img.src=el.productimage;
   let h2=document.createElement('h2');
-  h2.innerText=title;
+  h2.innerText=el.title;
   let div1=document.createElement('div');
   div1.setAttribute("class","productprice");
   let rentp=document.createElement('h2');
@@ -41,12 +58,12 @@ let productCard=({id,productimage,title,rent})=>{
   slider.addEventListener("mousemove",function(){
     var x=slider.value*10;
     var y=slider.value/10;
-    rentp.innerText=`${rent*y}/mon`;
+    rentp.innerText=`${(el.rent)*y}/mon`;
     var color='linear-gradient(90deg,rgb(1,134,179)'+ x +'%,rgb(214,214,214)'+x+'%)';
     slider.style.background=color;
   })
 
-  rentp.innerText=`${rent}/mon`;
+  rentp.innerText=`${(el.rent)}/mon`;
   div1.append(rentp)
   div.append(img,h2,div1);
   return div;
@@ -85,6 +102,23 @@ document.getElementById("itemcount4").innerText=WFHEssentialscount;
 document.getElementById("itemcount5").innerText=furniturecount;
 document.getElementById("itemcount6").innerText=fitnesscount;
 
-  })
-};
-
+//  
+// let productitem=(index)=>{
+//   localStorage.setItem("products",JSON.stringify(index));
+//   window.location.href="productview.html";
+//   console.log(index)
+// };
+let btnvalue=document.getElementById("whatpage")
+if (data.length==4){
+  btnvalue.innerText="Packages"
+} else if (data.length==22){
+  btnvalue.innerText="Electronics"
+} else if (data.length==15){
+  btnvalue.innerText="Appliances"
+} else if (data.length==20){
+  btnvalue.innerText="Furniture"
+} else if (data.length==5){
+  btnvalue.innerText="WFHEssentials"
+} else {
+  btnvalue.innerText="Fitness"
+}
