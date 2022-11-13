@@ -1,4 +1,4 @@
-import navbar from './components/navbar.js'
+import {navbar} from './components/navbar.js'
 let nav=document.getElementById('navbar')
 nav.innerHTML=navbar();
 
@@ -234,27 +234,27 @@ document.querySelector(".yt").addEventListener("click", () => {
   });
   
   document.querySelector("#pack").addEventListener("click", () => {
-    window.location.href ="https://www.rentomojo.com/bangalore/packages-on-rent";
+    window.location.href ="./basepack.html";
   });
   
   document.querySelector("#furni").addEventListener("click", () => {
-    window.location.href ="https://www.rentomojo.com/bangalore/furniture-on-rent";
+    window.location.href ="./basefurniture.html";
   });
 
   document.querySelector("#Appli").addEventListener("click", () => {
-    window.location.href ="https://www.rentomojo.com/bangalore/appliances-on-rent";
+    window.location.href ="./baseappliances.html";
   });
 
   document.querySelector("#Elec").addEventListener("click", () => {
-    window.location.href ="https://www.rentomojo.com/bangalore/electronics-on-rent";
+    window.location.href ="./baseelectronics.html";
   });
 
   document.querySelector("#Fit").addEventListener("click", () => {
-    window.location.href ="https://www.rentomojo.com/bangalore/fitness-equipment-on-rent";
+    window.location.href ="./basefitness.html";
   });
 
   document.querySelector("#WFH").addEventListener("click", () => {
-    window.location.href ="https://www.rentomojo.com/bangalore/wfh-essentials";
+    window.location.href ="./basewfh.html";
   });
   
 

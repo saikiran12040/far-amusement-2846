@@ -9,6 +9,218 @@
     <link rel="icon" href="RENTO.jpg" type="image/x-icon">
     <title>RENTO</title>
     <link rel="stylesheet" href="login.css"/>
+    <style>
+        #login-sign{
+    height:40px;
+    margin:20px 20px;
+    margin-top:20px;
+    background-color: rgb(220,50,38);
+    color:white;
+    border:none;
+    border-radius: 10px;
+    padding:13px 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+#login-sign:hover{
+    background-color: white;
+    color: rgb(220,50,38);
+    cursor:pointer;
+    transition: 1s;
+    border:1px solid rgb(220,50,38);
+}
+#login-sign a:hover{
+    color:red;
+    text-decoration: none;
+}
+#login-sign a{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* loginpopup */
+.popup .popup-content{
+    display: flex;
+}
+#loginbox1{
+    /* border:1px solid red; */
+    display: inline-block;
+    width:100vh;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#signupbox1{
+    display: inline-block;
+    width:100vh;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#loginbox2{
+    width: 70vh;
+}
+#signupbox2{
+    width: 70vh;
+}
+#loginbox2 #number{
+    margin-top:20%;
+    margin-left:5%;
+    padding:15px;
+    border:none;
+}
+#signupbox2 #number{
+    margin-top:20%;
+    margin-left:5%;
+    padding:15px;
+    border:none;
+}
+#loginbox2 input[type="text"],input[type="password"]{
+    background-color:rgb(219, 219, 247);
+    border:none;
+    padding:9px;
+    border-radius: 20px;
+    margin-left:19px;
+    margin-top:20px;
+    font-size: 16px;
+}
+#signupbox2 input[type="text"],input[type="password1"]{
+    background-color:rgb(219, 219, 247);
+    border:none;
+    border-radius: 20px;
+    padding:10px;
+    margin-left:20px;
+    margin-top:20px;
+    font-size: 16px;
+}
+#signupbox2 h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#loginbox2 h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.eye-icon{
+    position: absolute;
+    top:41%;
+    right:13%;
+    transition:translateY(-50%);
+    cursor:pointer;
+    font-size: 18px;
+    color: #8b8b8b;
+}
+.eye-icon{
+    position: absolute;
+    top:36%;
+    right:13%;
+    transition:translateY(-50%);
+    cursor:pointer;
+    font-size: 18px;
+    color: #8b8b8b;
+}
+#loginbox2{
+    display: inline-block;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#signupbox2{
+    display: inline-block;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#btn{
+    margin-top: 50%;
+    margin-left:10%
+}
+#btn2{
+    margin-top: 35%;
+    margin-left:13%
+}
+#btn #continue{
+    padding:5%;
+    width:90%;
+    border-radius:10px;
+    border:none;
+    color:white;
+    box-shadow:6px 6px 29px -4px rgba(0,0,0,0.2);
+    font-size:16px;
+    cursor:pointer;
+    background-color: rgb(234, 30, 30);
+}
+#btn2 #continue{
+    padding:5%;
+    width:90%;
+    border-radius:10px;
+    border:none;
+    color:white;
+    box-shadow:6px 6px 29px -4px rgba(0,0,0,0.2);
+    font-size:16px;
+    cursor:pointer;
+    background-color: rgb(234, 30, 30);
+}
+.createacc{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+#cont{
+    position: absolute;
+    top: 30%;
+    left:40%;
+    transform:translate(-10%,10%);
+    text-align: center;
+}
+#loginbox2 h2{
+    margin-top:20px;
+    width:100%;
+    font-size: 20px;
+    color:rgb(75, 71, 71); 
+    margin-left:10px;    
+}
+.popup{
+    background-color: rgba(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.popup-content{
+    height:400px;
+    width:600px;
+    background: #fff;
+    padding:50px;
+    border-radius: 9px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    top:4%;
+    right:3%;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    cursor:pointer;
+    box-shadow:6px 6px 29px -4px rgba(0,0,0,0.10);
+}
+.close1{
+    position:absolute;
+    top:4%;
+    right:3%;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    cursor:pointer;
+    box-shadow:6px 6px 29px -4px rgba(0,0,0,0.10);
+}
+    </style>
 </head>
 <body>
     <div id="navbar"></div>

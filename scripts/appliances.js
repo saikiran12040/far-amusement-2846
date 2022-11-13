@@ -9,6 +9,10 @@ import {nav2} from '../components/navbar.js'
 let nav3=document.getElementById('nav2')
 nav3.innerHTML=nav2();
 
+
+
+
+
   import {appliances, electronics, packages,WFHEssentials,furniture,fitness} from "../components/data.js"
   console.log(packages);
  let data=appliances;

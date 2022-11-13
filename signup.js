@@ -44,7 +44,7 @@ links.forEach(link=>{
 // redirecting to indexpage for login
 let sub=document.querySelector('.link')
 sub.onclick=()=>{
-    window.location.href="index.html"
+    window.location.href="./index.html"
 }
 
 
@@ -57,12 +57,13 @@ sign.addEventListener('click',function(){
     regi(event)
 })
 let regi=(e)=>{
-e.preventDefault()
+// e.preventDefault()
 var email=document.getElementById('email').value;
 var password=document.getElementById('password').value;
 
 if(email==""||password=="")
 {
+    e.preventDefault()
     alert('Fill all the Details')
 }
 else{
@@ -70,5 +71,6 @@ let obj={
     email,password
 }
 localStorage.setItem('data',JSON.stringify(obj))
+window.location.href="./login.html"
 }
 }

@@ -15,8 +15,100 @@
     /* border: 1px solid red; */
     background-color: white;
 }
+
+#mainBox {
+    width: 99.8%;
+    height: 99vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+}
+
+#aCities {
+    /* border: 1px solid; */
+    width: 5vw;
+    height: 4vh;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color:white;
+    margin-top: 15px;
+  border: none;
+}
+
+#aCities>span+span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#cmainBox {
+    padding: 10px;
+    position: absolute;
+    left: 15vw;
+    top: 6vh;
+    background-color: white;
+    width: 65vw;
+    height: 450px;
+}
+
+#in {
+
+    /* border: 1px solid; */
+    width: 96%;
+    height: 12%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#in>input {
+    width: 92%;
+    height: 90%;
+    border: 1px solid;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border-color: 2px solid #ddd;
+}
+
+#l_container {
+    width: 90%;
+    height: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 25px;
+    padding-left: 6vw;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+#l_container>div {
+    border: none;
+    text-align: center;
+    color: #767676;
+}
+
+#l_container>div>img {
+    width: 70%;
+    height: 70%;
+    border: 1.5px solid brown;
+    border-radius: 50%;
+}
+
+#l_container>div:hover {
+    border: 2px solid red;
+}
+
+.cl_image {
+    border: 2px solid red;
+}
 #box img{
-    height:6vh;
+    width: 50%;
+    height:5vh;
     margin:20px 30px;
     margin-left:100px
 }

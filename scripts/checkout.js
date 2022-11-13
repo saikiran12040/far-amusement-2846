@@ -1,4 +1,14 @@
 
+import {navbar} from '../components/navbar.js'
+
+//import {navbar} from './components/navbar.js'
+
+let nav=document.getElementById('navbar')
+nav.innerHTML=navbar();
+
+console.log("check")
+
+
 
 let data=JSON.parse(localStorage.getItem("rentproduct"))
 
@@ -106,7 +116,7 @@ let data=JSON.parse(localStorage.getItem("rentproduct"))
 // ]
 
 
-localStorage.setItem("rentproduct",JSON.stringify(arr))
+// localStorage.setItem("rentproduct",JSON.stringify(arr))
 let cont=document.getElementById("show_cartproducts")
 let reamount=0
 let rentalamount=0
@@ -159,7 +169,9 @@ function stich(data){
         plus.id="plus"
         plus.innerText="delete"
         plus.addEventListener("click",function(){
+           window.onload=function(){
             deleteit(ind)
+           }
         })
     
     
@@ -242,16 +254,8 @@ function  deleteit(ind){
 let proceed_btn=document.getElementById("pro")
 
 proceed_btn.onclick=()=>{
-    
+    window.location.href="./card.html"
 }
 localStorage.setItem("total",tamt)
 
 
-import {navbar} from '../components/navbar.js'
-
-//import {navbar} from './components/navbar.js'
-
-let nav=document.getElementById('navbar')
-nav.innerHTML=navbar();
-
-console.log("check")
