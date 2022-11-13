@@ -10,7 +10,76 @@ footer();
 const last_div = document.getElementById("last_portion");
 last_div.innerHTML = last();
 
+document.getElementById("search").addEventListener("input", function () {
+  debounce(search, 1000);
+});
 
+
+// navbar functionlity start
+
+const open = document.getElementById('aCities');
+open.addEventListener("click", () => {
+    const mb = document.getElementById('mainBox');
+    mb.style.display = "block"
+})
+
+
+const url = `https://arcane-sands-22352.herokuapp.com/api/cityDetail`
+
+let showDetail = async () => {
+    let res = await fetch(url)
+    res = await res.json()
+    console.log(res)
+    appendDom(res)
+}
+showDetail()
+
+let search = async () => {
+    let search = document.getElementById('search').value;
+    let res = await fetch(`${url}/?q=${search}`)
+    res = await res.json()
+    if (res.length == 0) {
+        let res = await fetch(url)
+        res = await res.json()
+        appendDom(res)
+        return;
+    }
+    appendDom(res)
+}
+let id;
+
+let debounce = (func, delay) => {
+    if (id) clearTimeout(id)
+    id = setTimeout(function () {
+        func()
+    }, delay)
+}
+
+let appendDom = (data) => {
+    const cont = document.getElementById('l_container');
+    cont.innerHTML = null;
+    data.forEach(({ image, name }) => {
+        const div = document.createElement('div');
+        div.classList.add("c_l_container")
+        const img = document.createElement('img');
+        img.classList.add("cl_image")
+        img.src = image;
+        const p = document.createElement('p');
+        p.classList.add('cl_name')
+        p.innerText = name;
+
+        div.append(img, p)
+        div.addEventListener("click", () => {
+            const city = document.getElementById('city');
+            city.innerText = name;
+            const mb = document.getElementById('mainBox');
+            mb.style.display = "none"
+
+        })
+        cont.append(div)
+    })
+}
+// navbar function is completed here
 let movie1={
     name: "Saddle Shoe Rack Large",
     image: "https://p.rmjo.in/productSquare/hs7hg508-500x500.jpg",
@@ -189,14 +258,31 @@ document.querySelector(".yt").addEventListener("click", () => {
   });
   
 
-  document.getElementById("greater").addEventListener("click",()=>{
+ document.getElementById("greater").addEventListener("click",(e)=>{
+    console.log(e);
     let ele = document.getElementById("container");
-    ele.scrollTo(400)
+    console.log(ele);
+    ele.scrollLeft += 400;
   })
 
-  document.getElementById("less").addEventListener("click",()=>{
+  document.getElementById("less").addEventListener("click",(e)=>{
+    console.log(e);
     let ele = document.getElementById("container");
-    ele.scrollTo(-400)
+    console.log(ele);
+    ele.scrollLeft -= 400;
   })
 
+  document.getElementById("greater1").addEventListener("click",(e)=>{
+    console.log(e);
+    let ele = document.querySelectorAll(".name-section");
+    console.log(ele);
+    ele.scrollLeft += 400;
+  })
+
+  document.getElementById("less1").addEventListener("click",(e)=>{
+    console.log(e);
+    let ele = document.querySelectorAll(".name-section");
+    console.log(ele);
+    ele.scrollLeft -= 400;
+  })
 
