@@ -1,7 +1,7 @@
 # far-amusement-2846
 Rentomojo is an online rental solution for all the furnishing needs including furniture, furnishings, home appliances and bikes. 
 
-Deployed Link -> https://hunky-advertisement-4799.netlify.app/
+Deployed Link -> https://brilliant-longma-48c9b7.netlify.app/
 
 # Team Members
 1.Sai Kiran
